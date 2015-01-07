@@ -1,0 +1,32 @@
+{
+	"name": "phpreq/phpdoc2db",
+	"description": "Build a database of PHP versions and extensions from the PHP manual",
+	"homepage": "https://phpreq.org",
+	"license": "AGPL-3.0",
+	"authors": [
+		{
+			"name": "Stuart Herbert",
+			"email": "stuart@stuartherbert.com",
+			"homepage": "http://www.stuartherbert.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/phpreq/phpdoc2db/issues",
+		"source": "https://github.com/phpreq/phpdoc2db/"
+	},
+	"require": {
+		"symfony/console": "~2.6",
+		"phpunit/phpunit": "~4.4"
+	},
+	"require-dev": {
+		"mockery/mockery": "dev-master"
+	},
+	"autoload": {
+		"psr-0": { "PHPReq" : "src" }
+	},
+	"autoload-dev": {
+		"psr-0": { "PHPReq" : "tests/unit-tests" }
+	},
+	"bin": ["bin/phpdoc2db"]
+}
